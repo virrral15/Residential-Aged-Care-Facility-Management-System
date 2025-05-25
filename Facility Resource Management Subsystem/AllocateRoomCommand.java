@@ -35,6 +35,7 @@ public class AllocateRoomCommand implements Command {
         boolean success = roomManager.allocateRoomToResident(roomNumber, resident);
         if (success) {
             System.out.println("✅ Room " + roomNumber + " successfully allocated to " + resident.getName());
+            ResidentRegistry.getInstance().registerResident(resident); // ✅ Register for reuse
         } else {
             System.out.println("❌ Failed to allocate room. It may not be available.");
         }
