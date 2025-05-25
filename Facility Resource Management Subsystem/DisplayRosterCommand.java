@@ -1,4 +1,4 @@
-package FRMS;
+package facility_resource_management;
 
 import java.util.Scanner;
 
