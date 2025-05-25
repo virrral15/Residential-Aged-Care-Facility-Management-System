@@ -10,9 +10,16 @@ public class EquipmentManager {
     private EquipmentManager() {
         this.equipmentList = new ArrayList<>();
         // Add sample equipment
-        equipmentList.add(new Equipment("EQ001", "Wheelchair", new EquipmentAvailableState()));
-        equipmentList.add(new Equipment("EQ002", "Monitor", new EquipmentInUseState()));
-        equipmentList.add(new Equipment("EQ003", "IV Pump", new EquipmentOutOfOrderState()));
+    equipmentList.add(new Equipment("EQ001", "Wheelchair", new EquipmentAvailableState()));
+    equipmentList.add(new Equipment("EQ002", "Heart Monitor", new EquipmentAvailableState()));
+    equipmentList.add(new Equipment("EQ003", "IV Pump", new EquipmentAvailableState()));
+    equipmentList.add(new Equipment("EQ004", "Oxygen Tank", new EquipmentInUseState()));
+    equipmentList.add(new Equipment("EQ005", "Bedside Commode", new EquipmentAvailableState()));
+    equipmentList.add(new Equipment("EQ006", "Hospital Bed", new EquipmentOutOfOrderState()));
+    equipmentList.add(new Equipment("EQ007", "Walker", new EquipmentAvailableState()));
+    equipmentList.add(new Equipment("EQ008", "Defibrillator", new EquipmentAvailableState()));
+    equipmentList.add(new Equipment("EQ009", "Infusion Pump", new EquipmentAvailableState()));
+    equipmentList.add(new Equipment("EQ010", "Pulse Oximeter", new EquipmentAvailableState()));
     }
 
     // Singleton instance
