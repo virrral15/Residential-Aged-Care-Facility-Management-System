@@ -10,9 +10,16 @@ public class RoomManager {
     private RoomManager() {
         this.rooms = new ArrayList<>();
         // Add mock data
-        rooms.add(new Room("101", "Single", new RoomAvailableState()));
-        rooms.add(new Room("102", "Double", new RoomAvailableState()));
-        rooms.add(new Room("103", "Single", new RoomUnderMaintenanceState()));
+    rooms.add(new Room("101", "Single", new RoomAvailableState()));
+    rooms.add(new Room("102", "Double", new RoomAvailableState()));
+    rooms.add(new Room("103", "Single", new RoomAvailableState()));
+    rooms.add(new Room("104", "Double", new RoomAvailableState()));
+    rooms.add(new Room("105", "Single", new RoomAvailableState()));
+    rooms.add(new Room("106", "Double", new RoomUnderMaintenanceState()));
+    rooms.add(new Room("107", "Single", new RoomAvailableState()));
+    rooms.add(new Room("108", "Single", new RoomOccupiedState()));
+    rooms.add(new Room("109", "Double", new RoomAvailableState()));
+    rooms.add(new Room("110", "Single", new RoomAvailableState()));
     }
 
     // Singleton accessor
