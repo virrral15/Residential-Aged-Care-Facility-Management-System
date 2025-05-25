@@ -13,16 +13,14 @@ public class AllocateEquipmentCommand implements Command {
     public void execute() {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter Resident ID: ");
+        System.out.print("Enter Resident ID: ");
         String id = scanner.nextLine();
 
-        System.out.println("Enter Resident Name: ");
-        String name = scanner.nextLine();
-
-        System.out.println("Enter Admission Date (YYYY-MM-DD): ");
-        String date = scanner.nextLine();
-
-        Resident resident = new Resident(id, name, date);
+        Resident resident = ResidentRegistry.getInstance().getResidentById(id);
+        if (resident == null) {
+            System.out.println("❌ Resident ID not found. Please allocate a room to the resident first.");
+            return;
+        }
 
         System.out.print("Enter Equipment Type to Search (e.g., Wheelchair): ");
         String type = scanner.nextLine();
