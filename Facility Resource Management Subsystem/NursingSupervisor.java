@@ -1,4 +1,4 @@
-package FRMS;
+package facility_resource_management;
 
 public class NursingSupervisor extends Staff {
     public NursingSupervisor(String staffID, String name) {
