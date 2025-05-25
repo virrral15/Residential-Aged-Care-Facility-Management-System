@@ -64,6 +64,16 @@ public class RoomManager {
         }
         return false;
     }
+    // Set Room as Available
+    public boolean markRoomAsAvailable(String roomNumber) {
+        for (Room room : rooms) {
+            if (room.getRoomNumber().equals(roomNumber) && room.getState() instanceof RoomUnderMaintenanceState) {
+                room.setState(new RoomAvailableState());
+                return true;
+            }
+        }
+        return false;
+    }
 
     // View Room Status
     public void displayRoomStatus() {
