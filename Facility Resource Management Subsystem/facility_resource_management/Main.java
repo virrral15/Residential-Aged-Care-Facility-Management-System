@@ -21,9 +21,9 @@ public class Main {
 
         // ----------------- Roster Management Commands -----------------
         invoker.registerCommand(9, new CreateRosterCommand(rosterManager));
-        invoker.registerCommand(11, new AddScheduleToRosterCommand(rosterManager));
-        invoker.registerCommand(12, new UpdateShiftCommand(rosterManager));
-        invoker.registerCommand(13, new DisplayRosterCommand(rosterManager));
+        invoker.registerCommand(10, new AddScheduleToRosterCommand(rosterManager));
+        invoker.registerCommand(11, new UpdateShiftCommand(rosterManager));
+        invoker.registerCommand(12, new DisplayRosterCommand(rosterManager));
 
         // ----------------- Start Program -----------------
         invoker.run();
