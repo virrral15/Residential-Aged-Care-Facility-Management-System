@@ -2,7 +2,7 @@
 **Part of the Residential Aged Care Facility Management System Project**  
 Developed by: Viralkumar Dasharathbhai Patel  
 Course: ITECH7201 – Software Engineering: Analysis and Design  
-Semester: T1, 2025
+University: Federation University Australia
 
 ---
 
