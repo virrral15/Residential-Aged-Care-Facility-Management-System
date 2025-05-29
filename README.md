@@ -29,7 +29,10 @@ This is a Java Console Application designed as part of the ITECH7201 – Softwar
 - Validation and ID management
 
 **Design Patterns Used:**
-- (To be filled by friend)
+- Singleton
+- State
+- Command
+- Inheritance & Composition
 
 ---
 
